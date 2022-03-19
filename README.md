@@ -27,10 +27,10 @@ git branch -M main
 ```
 git remote add origin "path"
 ```
+10. After hit enter add Github username & Password then your files successfully added in your Repository.
 ```
 git push -u origin main
 ```
-10. After hit enter add Github username & Password then your files successfully added in your Repository.
 
 
 Note: (Now github uses personal access tokens as a password. To generate personal access tokens Goto your profile settings/Developer settings/Personal access tokens Generate token).
