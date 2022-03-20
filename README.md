@@ -19,7 +19,7 @@ git add .
 ```
 git commit -m "first commit"
 ```
-8. -M --move --force.
+8. Add branch as main -M --move --force.
 ```
 git branch -M main
 ```
