@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+# Steps to push your Frappe app on Github using terminal
 
-You can use the [editor on GitHub](https://github.com/Vishal78626/Add-Frappe-app-in-GitRepo/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+1. First go to location where all apps are installed.
+2. Go to the app directory which you want to push.
+3. Creating new Repository on Github using terminal.
+```
+curl -u "GitProfileName" https://api.github.com/user/repos -d '{"name":"Noticeboard_GNEEDU","public":true}'
+```
+4. Check it on github a new repository is created.
+5. Creates a new branch and also switches to it, -b initialize branch.
+```
+git init -b main
+```
+6. Select all files & folder inside the directory.
+```
+git add .
+```
+7. Records or snapshots the file permanently in the version history.
+```
+git commit -m "first commit"
+```
+8. -M --move --force.
+```
+git branch -M main
+```
+9. Always Use HTTPS(easier & faster than other) path otherwise you have to setup SSH setting in your github profile.
+```
+git remote add origin "path"
+```
+10. After hit enter add Github username & Password then your files successfully added in your Repository.
+```
+git push -u origin main
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Vishal78626/Add-Frappe-app-in-GitRepo/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Note: (Now github uses personal access tokens as a password. To generate personal access tokens Goto your profile settings/Developer settings/Personal access tokens Generate token).
